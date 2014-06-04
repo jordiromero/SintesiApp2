@@ -5,7 +5,7 @@ android {
     buildToolsVersion '19.0.3'
     defaultConfig {
         packageName 'com.iesebre.sintesiapp2.sintesiapp'
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 18
         versionCode 1
         versionName '1.0'
