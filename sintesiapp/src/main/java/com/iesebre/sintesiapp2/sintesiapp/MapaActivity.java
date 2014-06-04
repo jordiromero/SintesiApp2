@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapaActivity extends FragmentActivity {
     GoogleMap map;
-    private static final LatLng EL_TEU_RESTAURANT = new LatLng(37.828891,-122.485884);
+    private static final LatLng EL_TEU_RESTAURANT = new LatLng(40.81471, 0.515187);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +30,8 @@ public class MapaActivity extends FragmentActivity {
                 map=((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
             }
             Marker rest = map.addMarker(new MarkerOptions().position(EL_TEU_RESTAURANT).title("El teu restaurant"));
+            CameraPosition cameraPosition = new CameraPosition.Builder().target(EL_TEU_RESTAURANT).zoom(16).build();
+            map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
         } catch (Exception e){
             e.printStackTrace();
