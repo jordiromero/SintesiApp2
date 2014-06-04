@@ -32,4 +32,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:19.+'
     compile 'com.android.support:appcompat-v7:19.+'
     compile 'com.google.android.gms:play-services:+'
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile 'com.google.code.gson:gson:2.2.+'
+    compile files('libs/android-json.jar')
 }

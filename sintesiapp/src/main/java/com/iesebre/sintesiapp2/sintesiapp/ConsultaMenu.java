@@ -2,6 +2,7 @@ package com.iesebre.sintesiapp2.sintesiapp;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.app.ListActivity;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.app.ActionBar;

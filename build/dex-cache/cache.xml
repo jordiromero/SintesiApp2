@@ -2,22 +2,28 @@
 <pre-dex-items>
 
     <item
-        dex="/home/jordi/AndroidStudioProjects/SintesiApp2/sintesiapp/build/pre-dexed/debug/classes-9c72d1cfba91544baa2746d7aa5eb05ffd9fc090.jar"
-        jar="/home/jordi/AndroidStudioProjects/SintesiApp2/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
-        jumboMode="false"
-        revision="19.0.3"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
-    <item
         dex="/home/jordi/AndroidStudioProjects/SintesiApp2/sintesiapp/build/pre-dexed/debug/support-v4-19.1.0-09322bcd812d6789278087ed32fc5d7f9de6b0ef.jar"
         jar="/usr/share/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
         jumboMode="false"
         revision="19.0.3"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
     <item
+        dex="/home/jordi/AndroidStudioProjects/SintesiApp2/sintesiapp/build/pre-dexed/debug/gson-2.2.4-29c433a93703dd08da2033633e7defd74ce3b0d8.jar"
+        jar="/home/jordi/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.0.3"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
+    <item
         dex="/home/jordi/AndroidStudioProjects/SintesiApp2/sintesiapp/build/pre-dexed/debug/classes-b1abfd258570051e1c4e9b4cb9d8e284220c13c7.jar"
         jar="/home/jordi/AndroidStudioProjects/SintesiApp2/build/exploded-aar/com.google.android.gms/play-services/4.4.52/classes.jar"
         jumboMode="false"
         revision="19.0.3"
         sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
+    <item
+        dex="/home/jordi/AndroidStudioProjects/SintesiApp2/sintesiapp/build/pre-dexed/debug/classes-9c72d1cfba91544baa2746d7aa5eb05ffd9fc090.jar"
+        jar="/home/jordi/AndroidStudioProjects/SintesiApp2/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.0.3"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
 
 </pre-dex-items>

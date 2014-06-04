@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android-json">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sintesiapp/libs/android-json.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
