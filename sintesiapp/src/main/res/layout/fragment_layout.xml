@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Your package folder -->
+<com.iesebre.sintesiapp2.sintesiapp.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+    <!--  News Busca Reserva Button -->
+    <Button
+        android:id="@+id/btn_busca_reserva"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_b_reserva"
+        android:text="Busca Reserva" />
+
+    <!--  Crea Reserva Button -->
+    <Button
+        android:id="@+id/btn_crea_reserva"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_c_reserva"
+        android:text="Crea Reserva" />
+
+    <!--  Usuaris Button -->
+    <Button
+        android:id="@+id/btn_usuaris"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_user_add"
+        android:text="Usuaris" />
+
+    <!--  Maps Button -->
+    <Button
+        android:id="@+id/btn_mapa"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_maps"
+        android:text="Mapes" />
+
+    <!--  Menu Button -->
+    <Button
+        android:id="@+id/btn_menu_crear"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_menu_crear"
+        android:text="Crear Menu" />
+
+    <!--  Menu Consulta menu -->
+    <Button
+        android:id="@+id/btn_menu_consulta"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_menu_c"
+        android:text="Consultar Menu" />
+
+</com.iesebre.sintesiapp2.sintesiapp.DashboardLayout>
