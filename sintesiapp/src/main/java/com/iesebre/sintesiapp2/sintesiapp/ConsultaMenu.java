@@ -3,19 +3,35 @@ package com.iesebre.sintesiapp2.sintesiapp;
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.app.ListActivity;
+import android.app.ProgressDialog;
+import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListAdapter;
+import android.widget.SimpleAdapter;
+
+import org.apache.http.NameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 import adapter.TabsPagerAdapter;
 
 
 public class ConsultaMenu extends FragmentActivity implements ActionBar.TabListener {
+
+
 
     private ViewPager viewPager;
     private TabsPagerAdapter mAdapter;
@@ -27,6 +43,8 @@ public class ConsultaMenu extends FragmentActivity implements ActionBar.TabListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_consulta_menu_layout);
+
+
 
         //Inicialització
         viewPager = (ViewPager)findViewById(R.id.pager);
@@ -54,7 +72,6 @@ public class ConsultaMenu extends FragmentActivity implements ActionBar.TabListe
             }
         });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
