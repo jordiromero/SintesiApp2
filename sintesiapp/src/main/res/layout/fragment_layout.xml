@@ -21,11 +21,11 @@
         android:text="Crea Reserva" />
 
     <!--  Usuaris Button -->
-    <Button
+   <!-- <Button
         android:id="@+id/btn_usuaris"
         style="@style/DashboardButton"
         android:drawableTop="@drawable/ic_user_add"
-        android:text="Usuaris" />
+        android:text="Usuaris" />-->
 
     <!--  Maps Button -->
     <Button
@@ -35,11 +35,11 @@
         android:text="Mapes" />
 
     <!--  Menu Button -->
-    <Button
+   <!-- <Button
         android:id="@+id/btn_menu_crear"
         style="@style/DashboardButton"
         android:drawableTop="@drawable/ic_menu_crear"
-        android:text="Crear Menu" />
+        android:text="Crear Menu" />-->
 
     <!--  Menu Consulta menu -->
     <Button

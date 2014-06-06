@@ -26,13 +26,13 @@ public class MainActivity extends Activity {
         Button btn_mapa = (Button) findViewById(R.id.btn_mapa);
 
         // Dashboard Places button
-        Button btn_usuaris = (Button) findViewById(R.id.btn_usuaris);
+       // Button btn_usuaris = (Button) findViewById(R.id.btn_usuaris);
 
         // Dashboard Events button
         Button btn_consulta_menu = (Button) findViewById(R.id.btn_menu_consulta);
 
         // Dashboard Photos button
-        Button btn_crea_menu = (Button) findViewById(R.id.btn_menu_crear);
+     //   Button btn_crea_menu = (Button) findViewById(R.id.btn_menu_crear);
 
         /**
          * Handling all button click events
@@ -72,7 +72,7 @@ public class MainActivity extends Activity {
         });
 
         // Listening to Places button click
-        btn_usuaris.setOnClickListener(new View.OnClickListener() {
+      /*  btn_usuaris.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -80,7 +80,7 @@ public class MainActivity extends Activity {
                 Intent i = new Intent(getApplicationContext(), UsersActivity.class);
                 startActivity(i);
             }
-        });
+        });*/
 
         // Listening to Events button click
         btn_consulta_menu.setOnClickListener(new View.OnClickListener() {
@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
         });
 
         // Listening to Photos button click
-        btn_crea_menu.setOnClickListener(new View.OnClickListener() {
+     /*   btn_crea_menu.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
                 Intent i = new Intent(getApplicationContext(), CreaMenu.class);
                 startActivity(i);
             }
-        });
+        });*/
     }
 
 

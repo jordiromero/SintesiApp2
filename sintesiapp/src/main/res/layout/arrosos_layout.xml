@@ -7,6 +7,13 @@
 
     <include layout="@layout/actionbar_layout" />
 
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" >
@@ -15,7 +22,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:padding="15dip"
-            android:text="Consulta Menu"
+            android:text="Consulta Menu Arrosos"
             android:textColor="#ff29549f"
             android:textSize="25dip"
             android:textStyle="bold" />
