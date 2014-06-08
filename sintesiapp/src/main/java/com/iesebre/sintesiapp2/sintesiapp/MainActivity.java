@@ -16,29 +16,29 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_layout);
 
-        // Dashboard News feed button
+        // Dashboard crea reserva
         Button btn_reserva_crea = (Button) findViewById(R.id.btn_crea_reserva);
 
-        // Dashboard Friends button
+        // Dashboard busca reserva
         Button btn_reserva_consulta = (Button) findViewById(R.id.btn_busca_reserva);
 
-        // Dashboard Messages button
+        // Dashboard mapa
         Button btn_mapa = (Button) findViewById(R.id.btn_mapa);
 
-        // Dashboard Places button
+        // Dashboard usuaris
        // Button btn_usuaris = (Button) findViewById(R.id.btn_usuaris);
 
-        // Dashboard Events button
+        // Dashboard consulta menu
         Button btn_consulta_menu = (Button) findViewById(R.id.btn_menu_consulta);
 
-        // Dashboard Photos button
+        // Dashboard crear menu
      //   Button btn_crea_menu = (Button) findViewById(R.id.btn_menu_crear);
 
         /**
          * Handling all button click events
          * */
 
-        // Listening to News Feed button click
+        // Listening reserva crea button click
         btn_reserva_crea.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        // Listening Friends button click
+        // Listening reserva consulta button click
         btn_reserva_consulta.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        // Listening Messages button click
+        // Listening mapa button click
         btn_mapa.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -71,7 +71,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        // Listening to Places button click
+        // Listening usuaris button click
       /*  btn_usuaris.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -82,18 +82,18 @@ public class MainActivity extends Activity {
             }
         });*/
 
-        // Listening to Events button click
+        // Listening consulta menu button click
         btn_consulta_menu.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 // Launching News Feed Screen
-                Intent i = new Intent(getApplicationContext(), ConsultaMenu.class);
+                Intent i = new Intent(getApplicationContext(), MenuTotActivity.class);
                 startActivity(i);
             }
         });
 
-        // Listening to Photos button click
+        // Listening crea menu button click
      /*   btn_crea_menu.setOnClickListener(new View.OnClickListener() {
 
             @Override

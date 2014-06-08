@@ -30,7 +30,7 @@ public class MenuTotActivity extends ListActivity {
     ArrayList<HashMap<String, String>> menuList;
     JSONArray menu = null;
     //Json URL
-    private static final String MENU_URL = "http://192.168.1.38/sintesi/index.php/main/jsonGet";
+    private static final String MENU_URL = "http://192.168.1.39/sintesi/index.php/main/jsonGet";
 
     //JSON node names
     private static final String TAG_MENU = "menu";
@@ -98,8 +98,8 @@ public class MenuTotActivity extends ListActivity {
                 @Override
                 public void run() {
                     ListAdapter adapter = new SimpleAdapter(
-                            MenuTotActivity.this, menuList,R.layout.menu_tot, new String[]{TAG_IMAGE,TAG_NAME,TAG_DESCRIPTION,TAG_TYPE,TAG_PRICE},
-                            new int[] {R.id.image_tot, R.id.nom_tot, R.id.descrip_tot,R.id.tipus_m_tot,R.id.preu_tot});
+                            MenuTotActivity.this, menuList, R.layout.activity_menu_tot, new String[]{TAG_IMAGE,TAG_NAME,TAG_DESCRIPTION,TAG_TYPE,TAG_PRICE},
+                            new int[] {R.id.image_tot, R.id.nom_tot, R.id.descrip_tot, R.id.tipus_m_tot, R.id.preu_tot});
 
                     setListAdapter(adapter);
                 }

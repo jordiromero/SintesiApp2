@@ -2,7 +2,7 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '19.0.3'
+    buildToolsVersion '19.1.0'
     defaultConfig {
         packageName 'com.iesebre.sintesiapp2.sintesiapp'
         minSdkVersion 14
