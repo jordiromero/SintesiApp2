@@ -1,7 +1,5 @@
 package com.iesebre.sintesiapp2.sintesiapp;
 
-import android.util.StringBuilderPrinter;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
