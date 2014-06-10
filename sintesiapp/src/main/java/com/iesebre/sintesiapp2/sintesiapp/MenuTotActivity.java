@@ -2,8 +2,10 @@ package com.iesebre.sintesiapp2.sintesiapp;
 
 import android.app.ListActivity;
 import android.app.ProgressDialog;
+import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -76,10 +78,11 @@ public class MenuTotActivity extends ListActivity {
                     String type = c.getString(TAG_TYPE);
                     String price = c.getString(TAG_PRICE);
 
+
                     //new hashmap
 
                     HashMap<String, String> map = new HashMap<String, String>();
-                    map.put(TAG_IMAGE,url_image + image);
+                    map.put(TAG_IMAGE, image);
                     map.put(TAG_NAME, "Producte: " + name);
                     map.put(TAG_DESCRIPTION, "Descripció: "+description);
                     map.put(TAG_TYPE, "Tipus: "+type);

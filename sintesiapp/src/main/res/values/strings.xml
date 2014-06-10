@@ -11,5 +11,6 @@
     <string name="title_activity_consulta_menu">ConsultaMenu</string>
     <string name="title_activity_crea_menu">CreaMenu</string>
     <string name="title_activity_menu_tot">MenuTotActivity</string>
+    <string name="image_tot">Imatge</string>
 
 </resources>
