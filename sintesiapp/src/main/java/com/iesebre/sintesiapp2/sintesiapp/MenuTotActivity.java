@@ -23,6 +23,7 @@ import java.util.List;
 public class MenuTotActivity extends ListActivity {
 
     private ProgressDialog pDialog;
+    private static final String url_image = "http://192.168.1.38/sintesi/assets/images/menu/";
 
     //Creating JSON Parser Object
     JSONParser jsonParser = new JSONParser();
@@ -36,14 +37,14 @@ public class MenuTotActivity extends ListActivity {
     private static final String TAG_IMAGE = "image";
     private static final String TAG_NAME = "name";
     private static final String TAG_DESCRIPTION = "description";
-    private static final String TAG_TYPE = "type";
+    private static final String TAG_TYPE = "m_type";
     private static final String TAG_PRICE = "price";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu_tot);
+        setContentView(R.layout.activity_menu_tot);
 
         menuList = new ArrayList<HashMap<String, String>>();
         new LoadMenu().execute();
@@ -63,7 +64,7 @@ public class MenuTotActivity extends ListActivity {
 
         protected  String doInBackground(String... args){
             List<NameValuePair> params = new ArrayList<NameValuePair>();
-            JSONObject json = jsonParser.makeHttpRequest(MENU_URL, "GET", params);
+            JSONObject json = jsonParser.makeHttpRequest(MENU_URL, "POST", params);
             Log.d("Menu JSON: ", json.toString());
             try{
                 menu = json.getJSONArray(TAG_MENU);
@@ -74,13 +75,15 @@ public class MenuTotActivity extends ListActivity {
                     String description = c.getString(TAG_DESCRIPTION);
                     String type = c.getString(TAG_TYPE);
                     String price = c.getString(TAG_PRICE);
+
                     //new hashmap
+
                     HashMap<String, String> map = new HashMap<String, String>();
-                    map.put(TAG_IMAGE, image);
-                    map.put(TAG_NAME, name);
-                    map.put(TAG_DESCRIPTION, description);
-                    map.put(TAG_TYPE, type);
-                    map.put(TAG_PRICE, price);
+                    map.put(TAG_IMAGE,url_image + image);
+                    map.put(TAG_NAME, "Producte: " + name);
+                    map.put(TAG_DESCRIPTION, "Descripció: "+description);
+                    map.put(TAG_TYPE, "Tipus: "+type);
+                    map.put(TAG_PRICE, "Preu: "+price + " €");
                     menuList.add(map);
 
                 }
@@ -97,7 +100,7 @@ public class MenuTotActivity extends ListActivity {
                 @Override
                 public void run() {
                     ListAdapter adapter = new SimpleAdapter(
-                            MenuTotActivity.this, menuList, R.layout.activity_menu_tot, new String[]{TAG_IMAGE,TAG_NAME,TAG_DESCRIPTION,TAG_TYPE,TAG_PRICE},
+                            MenuTotActivity.this, menuList, R.layout.menu_tot, new String[]{TAG_IMAGE, TAG_NAME, TAG_DESCRIPTION, TAG_TYPE, TAG_PRICE},
                             new int[] {R.id.image_tot, R.id.nom_tot, R.id.descrip_tot, R.id.tipus_m_tot, R.id.preu_tot});
 
                     setListAdapter(adapter);
