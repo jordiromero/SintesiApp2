@@ -35,4 +35,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:19.+'
     compile 'com.google.code.gson:gson:2.2.+'
     compile files('libs/android-json.jar')
+    compile files('libs/picasso-2.2.0.jar')
 }
